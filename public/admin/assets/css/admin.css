@@ -1,0 +1,547 @@
+/**
+ * 后台管理样式 - 红橙渐变主题
+ */
+
+/* 主题色变量 */
+:root {
+    --primary-gradient: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    --primary-color: #dc2626;
+    --primary-dark: #b91c1c;
+    --secondary-color: #ef4444;
+}
+
+/* 自定义AdminLTE样式 */
+.main-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.brand-link {
+    font-weight: 600;
+}
+
+/* 侧边栏菜单 */
+.nav-sidebar .nav-link {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 2px 8px;
+}
+
+.nav-sidebar .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.nav-sidebar .nav-link.active {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    box-shadow: 0 2px 5px rgba(220, 38, 38, 0.3);
+}
+
+.nav-header {
+    color: #adb5bd;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px 15px 5px;
+}
+
+/* 小盒子样式 */
+.small-box {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.small-box:hover {
+    transform: translateY(-3px);
+}
+
+.small-box .icon {
+    top: 10px;
+    right: 15px;
+    font-size: 60px;
+}
+
+/* 卡片样式 */
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px 20px;
+}
+
+.card-title {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* 表格样式 */
+.table th {
+    font-weight: 600;
+    border-top: none;
+    background-color: #f8f9fa;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* 按钮样式 */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.btn-sm {
+    padding: 5px 12px;
+    font-size: 0.875rem;
+}
+
+/* 表单样式 */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* 徽章样式 */
+.badge {
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 面包屑导航 */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item a {
+    color: #6c757d;
+}
+
+.breadcrumb-item.active {
+    color: #495057;
+}
+
+/* 内容区域 */
+.content-wrapper {
+    background-color: #f4f6f9;
+}
+
+.content-header {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+/* 页脚 */
+.main-footer {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    padding: 15px;
+    font-size: 0.875rem;
+}
+
+/* 快捷操作按钮 */
+.btn-outline-info:hover,
+.btn-outline-success:hover,
+.btn-outline-warning:hover,
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-danger:hover {
+    color: #fff;
+}
+
+/* 按钮主题色覆盖 */
+.btn-primary {
+    background: var(--primary-gradient);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+    border: none;
+}
+
+.btn-outline-primary {
+    color: #f97316;
+    border-color: #f97316;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-gradient);
+    border-color: #f97316;
+}
+
+/* 徽章主题色 */
+.badge-primary {
+    background: var(--primary-gradient);
+}
+
+.badge-warning {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+/* 顶部导航栏 */
+.main-header.navbar-white {
+    background: linear-gradient(135deg, #fff 0%, #fef2f2 100%);
+    border-bottom: 1px solid #fecaca;
+}
+
+/* 侧边栏Logo区域 */
+.brand-link {
+    background: var(--primary-gradient) !important;
+    color: #fff !important;
+}
+
+/* 链接颜色 */
+a {
+    color: #dc2626;
+}
+
+a:hover {
+    color: #b91c1c;
+}
+
+.breadcrumb-item a {
+    color: #dc2626;
+}
+
+/* 分页主题色 */
+.page-item.active .page-link {
+    background: var(--primary-gradient);
+    border-color: #dc2626;
+}
+
+.page-link {
+    color: #dc2626;
+}
+
+.page-link:hover {
+    color: #b91c1c;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .content-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .small-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .small-box .icon {
+        font-size: 40px;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease;
+}
+
+/* 加载动画 */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #dc2626;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 图片预览 */
+.img-preview {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+/* 文件上传区域 */
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #dc2626;
+    background-color: rgba(220, 38, 38, 0.05);
+}
+
+/* ===== 红色主题色覆盖 - 全站统一 ===== */
+/* 覆盖所有Bootstrap颜色为红色系 */
+
+/* Primary -> 红色 */
+.text-primary {
+    color: #dc2626 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    border-color: transparent !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}
+
+.btn-outline-primary {
+    color: #dc2626 !important;
+    border-color: #dc2626 !important;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    color: #fff !important;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+.border-primary {
+    border-color: #dc2626 !important;
+}
+
+.badge.bg-primary {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+/* Success -> 红色 */
+.text-success {
+    color: #dc2626 !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    border-color: transparent !important;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+.border-success {
+    border-color: #dc2626 !important;
+}
+
+/* Info -> 红色 */
+.text-info {
+    color: #dc2626 !important;
+}
+
+.btn-info {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    border-color: transparent !important;
+    color: #fff !important;
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}
+
+.bg-info {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+}
+
+.border-info {
+    border-color: #dc2626 !important;
+}
+
+/* Warning -> 橙红色 */
+.text-warning {
+    color: #ea580c !important;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    border-color: transparent !important;
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+}
+
+/* Danger -> 深红色 */
+.text-danger {
+    color: #b91c1c !important;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    border-color: transparent !important;
+}
+
+.bg-danger {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+}
+
+/* 链接颜色 */
+a {
+    color: #dc2626;
+}
+
+a:hover {
+    color: #b91c1c;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: #b91c1c !important;
+}
+
+/* 表单焦点状态 */
+.form-control:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 0.25rem rgba(220, 38, 38, 0.25);
+}
+
+.form-select:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 0.25rem rgba(220, 38, 38, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(220, 38, 38, 0.25);
+}
+
+/* 分页 */
+.page-link {
+    color: #dc2626;
+}
+
+.page-link:hover {
+    color: #b91c1c;
+    background-color: rgba(220, 38, 38, 0.1);
+}
+
+.page-item.active .page-link {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    border-color: #dc2626;
+}
+
+/* 导航链接 */
+.nav-link {
+    color: #dc2626;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #b91c1c;
+}
+
+/* 下拉菜单激活项 */
+.dropdown-item.active,
+.dropdown-item:active {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* 进度条 */
+.progress-bar {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* 列表组 */
+.list-group-item.active {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    border-color: #dc2626;
+}
+
+/* 警告框 */
+.alert-primary,
+.alert-success,
+.alert-info {
+    background-color: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.3);
+    color: #b91c1c;
+}
+
+/* AdminLTE 特定覆盖 */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    box-shadow: 0 2px 5px rgba(220, 38, 38, 0.3);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #dc2626;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #b91c1c;
+}
+
+/* 顶部导航栏 */
+.main-header.navbar-white {
+    background: linear-gradient(135deg, #fff 0%, #fef2f2 100%);
+    border-bottom: 1px solid #fecaca;
+}
+
+/* 侧边栏Logo区域 */
+.brand-link {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    color: #fff !important;
+}
+
+.upload-area.dragover {
+    border-color: #dc2626;
+    background-color: rgba(220, 38, 38, 0.1);
+}
